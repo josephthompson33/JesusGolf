@@ -1,0 +1,15 @@
+testing plans 
+project3
+Joseph Thompson
+
+D:level: I tested getURL by using various URLs it didnt work for dhttps URLs, since it wasnt 
+supported, i ignored this error.
+
+C Level: i tested my URLgraph class, not much trouble here, i then tested my breadth first search with
+many URLs . it crashed at certain points, i discovered
+that it crashed when it was trying to make a simplecurl object with an empty string.
+
+B Level: i got it to look for words pretty easily, getting it to output the path to said key was the hard part
+
+A Level: i decided to implement depth first search, and taking arguments and amount of  it works occasionally
+the program also outputs how many pages were examined.

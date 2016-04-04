@@ -1,0 +1,34 @@
+//class urlgraph
+// will hold a graph of the urls found while searching for a word or phrase
+//Joseph thompson
+//November 2 2015
+
+
+#include <string>
+#include <iostream>
+#include <vector>
+#include <cctype>
+#include <algorithm>
+#include <iterator>
+#include <curl/curl.h>
+#include "SimpleCurl.h"
+
+using namespace std; 
+#ifndef URLgraph
+#define URLgraph
+
+class URLgraph{
+public: 
+	URLgraph(){
+		map<string, vector<string>>	graph = create_map();
+	}  
+	void setNeighbors(string url,vector<string> neighbors){
+		graph.insert(url,neighbors);
+	}
+	vector<string> getNeighbors(string url){
+		return graph[url];
+	}
+
+private:
+	map<string,vector<string>> graph;//this will hold all of the urls and their neighbors
+};
